@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/n_nmap.dir/main.cpp.o -o n_nmap 
+/usr/bin/c++ -g CMakeFiles/n_nmap.dir/main.cpp.o -o n_nmap  -lpthread 

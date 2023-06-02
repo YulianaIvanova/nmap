@@ -117,41 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named n_nmap
+# Target rules for targets named main.cpp
 
 # Build rule for target.
-n_nmap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 n_nmap
-.PHONY : n_nmap
+main.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main.cpp
+.PHONY : main.cpp
 
 # fast build rule for target.
-n_nmap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/n_nmap.dir/build.make CMakeFiles/n_nmap.dir/build
-.PHONY : n_nmap/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/n_nmap.dir/build.make CMakeFiles/n_nmap.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/n_nmap.dir/build.make CMakeFiles/n_nmap.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/n_nmap.dir/build.make CMakeFiles/n_nmap.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/build
+.PHONY : main.cpp/fast
 
 # Help Target
 help:
@@ -161,10 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... n_nmap"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main.cpp"
 .PHONY : help
 
 
